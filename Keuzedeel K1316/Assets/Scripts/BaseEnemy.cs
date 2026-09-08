@@ -42,5 +42,6 @@ public class BaseEnemy : MonoBehaviour
     {
         Debug.Log("Enemy reached the end of the path and is despawning.");
         gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 }
