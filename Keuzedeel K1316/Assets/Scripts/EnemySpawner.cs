@@ -9,7 +9,6 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private Transform[] pathPoints;
 
     private readonly List<BaseEnemy> activeEnemies = new List<BaseEnemy>();
-    // pool removed — no longer reusing enemies
 
     public void SpawnWave(int amount, float delayBetweenSpawns)
     {
@@ -39,6 +38,6 @@ public class EnemySpawner : MonoBehaviour
 
     private void HandleEnemyDespawn(BaseEnemy enemy)
     {
-        activeEnemies.Remove(enemy); // just tracking who's alive now, no re-queueing
+        activeEnemies.Remove(enemy);
     }
 }

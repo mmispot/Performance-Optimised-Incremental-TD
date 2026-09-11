@@ -34,7 +34,7 @@ public class BaseEnemy : MonoBehaviour
 
     private void DeSpawn()
     {
-        OnDespawn?.Invoke(this); // still tell the spawner, so it can remove it from activeEnemies
+        OnDespawn?.Invoke(this);
         Destroy(gameObject);
     }
 }
