@@ -1,0 +1,229 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/GameplayStyle.uss?fileID=7433441132597879392&amp;guid=8176d5c9154757441a2132a7ca0d3c5f&amp;type=3#GameplayStyle"/>
+    <ui:VisualElement name="Root" class="root" style="flex-grow: 1;">
+        <ui:VisualElement name="Inventory" class="inventory" style="left: 25px; top: 25px; bottom: 25px;">
+            <ui:ScrollView name="Content" class="content">
+                <ui:Button text="BUY" name="Base" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Cannon" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Frost" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button text="BUY" name="Support" style="height: 110px; width: 105px;">
+                    <ui:VisualElement name="BaseTower">
+                        <ui:Label text="Price" style="bottom: auto;"/>
+                    </ui:VisualElement>
+                </ui:Button>
+            </ui:ScrollView>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
