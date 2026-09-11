@@ -26,6 +26,7 @@ public class GameplayUI : MonoBehaviour
     private void OnUIReload(PanelRenderer panelRenderer, VisualElement rootElement, int version)
     {
         scrollView = rootElement.Q<ScrollView>("Content");
+        scrollView.verticalScrollerVisibility = ScrollerVisibility.AlwaysVisible;
     }
 
     public void CountButtons()
