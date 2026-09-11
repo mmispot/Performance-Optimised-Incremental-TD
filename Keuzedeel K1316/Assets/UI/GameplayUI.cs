@@ -3,9 +3,20 @@ using UnityEngine.UIElements;
 
 public class GameplayUI : MonoBehaviour
 {
+    public EnemySpawner enemySpawner;
+    private Button spawnButton;
     private PanelRenderer panelRenderer;
     private ScrollView scrollView;
     public int buttonCount;
+
+    private void Start()
+    {
+        // Zorg ervoor dat de EnemySpawner is ingesteld in de Inspector.
+        if (enemySpawner == null)
+        {
+            Debug.LogError("EnemySpawner is not assigned in the Inspector!");
+        }
+    }
 
     private void OnEnable()
     {
@@ -27,6 +38,9 @@ public class GameplayUI : MonoBehaviour
     {
         scrollView = rootElement.Q<ScrollView>("Content");
         scrollView.verticalScrollerVisibility = ScrollerVisibility.AlwaysVisible;
+
+        spawnButton = rootElement.Q<Button>("SpawnBtn");
+        spawnButton.clicked += OnSpawnButtonClicked;
     }
 
     public void CountButtons()
@@ -51,5 +65,10 @@ public class GameplayUI : MonoBehaviour
             scrollView.RemoveFromClassList("wider");
             Debug.Log("Removed wider class from scrollView");
         }
+    }
+
+    public void OnSpawnButtonClicked()
+    {
+        enemySpawner.SpawnWave(10, 0.5f);
     }
 }

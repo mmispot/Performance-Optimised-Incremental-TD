@@ -1,29 +1,26 @@
 using UnityEngine;
 using System.Collections;
+using System;
 
 public class BaseEnemy : MonoBehaviour
 {
-    public Transform[] pathPoints;
-    public Transform spawner;
+    private Transform[] pathPoints;
 
     [SerializeField] private float moveSpeed = 5f;
 
-    private void Start()
-    {
-        SpawnIn();
-    }
+    public event Action<BaseEnemy> OnDespawn;
 
-    private void SpawnIn()
+    public void Activate(Vector3 spawnPosition, Transform[] path)
     {
-        transform.position = spawner.position;
+        pathPoints = path;
+        transform.position = spawnPosition;
         gameObject.SetActive(true);
-
         StartCoroutine(Move());
     }
 
     private IEnumerator Move()
     {
-        foreach (Transform targetPoint in pathPoints) // loop through each point in the path (transforms in scene)
+        foreach (Transform targetPoint in pathPoints)
         {
             while (Vector3.Distance(transform.position, targetPoint.position) > 0.01f)
             {
@@ -32,16 +29,12 @@ public class BaseEnemy : MonoBehaviour
             }
         }
 
-        if (Vector3.Distance(transform.position, pathPoints[10].position) < 0.01f)
-        {
-            DeSpawn();
-        }    
+        DeSpawn();
     }
 
     private void DeSpawn()
     {
-        Debug.Log("Enemy reached the end of the path and is despawning.");
-        gameObject.SetActive(false);
+        OnDespawn?.Invoke(this); // still tell the spawner, so it can remove it from activeEnemies
         Destroy(gameObject);
     }
 }

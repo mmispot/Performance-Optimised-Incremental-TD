@@ -1,8 +1,8 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/GameplayStyle.uss?fileID=7433441132597879392&amp;guid=8176d5c9154757441a2132a7ca0d3c5f&amp;type=3#GameplayStyle"/>
     <ui:VisualElement name="Root" class="root" style="flex-grow: 1;">
-        <ui:ScrollView name="Inventory" class="inventory" style="width: 17%;">
-            <ui:ScrollView name="Content" class="content">
+        <ui:ScrollView name="Inventory" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden" class="inventory" style="width: 17%; margin-left: 30px;">
+            <ui:ScrollView name="Content" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden" class="content">
                 <ui:Button text="BUY" name="Base" class="item-buttons" style="height: 110px; width: 105px;">
                     <ui:VisualElement name="BaseTower">
                         <ui:Label text="Price" style="bottom: auto;"/>
@@ -230,4 +230,5 @@
             <ui:Button text="Button" name="Settings" class="button" style="width: 65px; height: 65px;"/>
         </ui:VisualElement>
     </ui:VisualElement>
+    <ui:Button text="Spawn 10" name="SpawnBtn"/>
 </ui:UXML>
