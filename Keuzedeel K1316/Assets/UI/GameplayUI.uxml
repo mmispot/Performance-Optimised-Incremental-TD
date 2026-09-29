@@ -8,7 +8,7 @@
                         <ui:Label text="Price" style="bottom: auto;"/>
                     </ui:VisualElement>
                 </ui:Button>
-                <ui:Button text="BUY" name="Cannon" class="item-buttons" style="height: 110px; width: 105px;">
+                <ui:Button text="&#10;" name="Spiky" icon-image="" class="item-buttons" style="height: 110px; width: 105px; -unity-material: url(&quot;&quot;); background-image: url(&quot;project://database/Assets/Sprites/Towers/cactustower.png?fileID=2800000&amp;guid=aeb0cd633ca3b6b4cb2a64cfaafa3272&amp;type=3#cactustower&quot;);">
                     <ui:VisualElement name="BaseTower">
                         <ui:Label text="Price" style="bottom: auto;"/>
                     </ui:VisualElement>
