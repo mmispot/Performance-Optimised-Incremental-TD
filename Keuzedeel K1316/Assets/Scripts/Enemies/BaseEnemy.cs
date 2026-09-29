@@ -1,9 +1,16 @@
 using UnityEngine;
 using System.Collections;
 using System;
+using Unity.Collections.Tests.CoreCLR.TestJobs;
 
 public class BaseEnemy : MonoBehaviour
 {
+
+    //Base Enemy stats
+
+    [SerializeField] protected int health = 100;
+    [SerializeField] protected int damage = 10;
+
     private Transform[] pathPoints;
 
     [SerializeField] private float moveSpeed = 5f;
@@ -34,7 +41,18 @@ public class BaseEnemy : MonoBehaviour
 
     private void DeSpawn()
     {
+        //voordat het object despawned, zorgen dat damage wordt genomen van total "player" health
+
         OnDespawn?.Invoke(this);
         Destroy(gameObject);
+    }
+
+    public void TakeDamage(int damageAmount)
+    {
+        health -= damageAmount;
+        if (health <= 0)
+        {
+            DeSpawn();
+        }
     }
 }

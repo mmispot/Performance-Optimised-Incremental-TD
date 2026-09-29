@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject enemyPrefab;
+    [SerializeField] private List<GameObject> enemyPrefabs;
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private Transform[] pathPoints;
 
@@ -26,7 +26,7 @@ public class EnemySpawner : MonoBehaviour
 
     private BaseEnemy SpawnEnemy()
     {
-        GameObject obj = Instantiate(enemyPrefab);
+        GameObject obj = Instantiate(enemyPrefabs[Random.Range(0, enemyPrefabs.Count)]);
         BaseEnemy enemy = obj.GetComponent<BaseEnemy>();
         enemy.OnDespawn += HandleEnemyDespawn;
 
