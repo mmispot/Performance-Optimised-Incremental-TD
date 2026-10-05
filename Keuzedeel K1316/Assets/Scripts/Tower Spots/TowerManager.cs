@@ -4,8 +4,8 @@ using UnityEngine.UIElements;
 
 public class TowerManager : MonoBehaviour
 {
-    public GameObject uiToolkitObject;      // drag the "UI Toolkit" GameObject here
-    public List<GameObject> towerPrefabs;   // drag your tower prefabs in here
+    public GameObject uiToolkitObject;
+    public List<GameObject> towerPrefabs;
 
     GameObject selectedTower;
     PanelRenderer panelRenderer;
@@ -18,18 +18,18 @@ public class TowerManager : MonoBehaviour
 
     void OnDisable()
     {
-        if (panelRenderer != null)
+        if (panelRenderer != null) 
+        {
             panelRenderer.UnregisterUIReloadCallback(OnUIReload);
+        }
     }
 
-    // Unity calls this whenever the UI is (re)loaded and gives you the root element
     void OnUIReload(PanelRenderer renderer, VisualElement root)
     {
-        root.Query<Button>().ForEach(button =>
-            button.RegisterCallback<ClickEvent>(OnShopButtonClicked));
+        root.Query<Button>().ForEach(button => button.RegisterCallback<ClickEvent>(OnShopButtonClicked));
     }
 
-    void OnShopButtonClicked(ClickEvent evt)
+    void OnShopButtonClicked(ClickEvent evt)  //Admittedly did use AI for the next 2 functions so I didnt have to write a lot of code, but I did have to edit it to make it work with the code I'd alr written
     {
         var button = (Button)evt.currentTarget;
         selectedTower = towerPrefabs.Find(p => p.name == button.name);
